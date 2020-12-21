@@ -1,0 +1,14 @@
+html{
+    background: url(../images/backgroundMobile.svg);
+    height: 100%;
+    background-size: 100%;
+    margin: 0;
+}
+
+@media(min-width: 900px){
+    html{
+        background: url(../images/background2.svg);
+        height: 100%;
+        background-size: 100%;
+    }
+}

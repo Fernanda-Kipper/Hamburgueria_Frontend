@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+}
+
+.App{
+    height: 100%;
+    width: 100%;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    padding-top: 50px;
+}
+
+.App header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.App header .contact{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.App header .contactScrolled{
+    display: flex;
+    flex-direction: column;
+}
+
+.App header .contact a{
+    text-decoration: none;
+}
+
+.App header .contact a img{
+    height: 25px;
+    width: 25px;
+    margin: 5px;
+}
+
+.App header .contactScrolled a img{
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+}
+
+.App main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.App main .title{
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    color: #143642;
+    text-align: center;
+    max-width: 300px;
+}
+
+.App main h4{
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    color: #A8201A;
+}
+
+.App main .description{
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    color: #143642;
+    margin: 20px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.App main .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 300px;
+}
+
+.App main .content .right, .left{
+    display: none;
+}
+
+.App main .content #burguer{
+    transition: 1202030303ms;
+}
+
+.App main .content .burger{
+    height: 300px;
+    width: 300px;
+}
+
+.App main .content .burgerScrolled{
+    align-self: flex-end;
+    height: 300px;
+    width: 300px;
+}
+
+.App main section{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.App main section h4{
+    margin: 20px;
+}
+
+@media(min-width: 900px){
+    .App{
+        background: url(../images/background.svg) no-repeat;
+        height: 100%;
+        width: 100%;
+        background-size: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    
+        padding-top: 50px;
+    }
+
+    .App header .contact a img{
+        height: 35px;
+        width: 35px;
+    }
+    
+    .App header .contactScrolled a img{
+        height: 40px;
+        width: 40px;
+    }
+
+    .App main .title{
+        font-size: 60px;
+        max-width: 700px;
+    }
+
+    .App main h4{
+        font-size: 45px;
+    }
+
+    .App main .description{
+        margin: 20px;
+        max-width: 800px;
+    }
+
+    .App main .content{
+        height: 600px;
+    }
+
+    .App main .content img{
+        height: 400px;
+        width: 400px;
+    }
+
+    .App main .content .burger{
+        height: 400px;
+        width: 400px;
+        position: fixed;
+    }
+
+    .App main .content .right{
+        transform: scaleX(-1);
+    }
+
+    .App main .content .right, .left{
+        display: block;
+    }
+
+    .App main .content .burgerScrolled{
+        align-self: flex-end;
+        height: 400px;
+        width: 400px;
+    }
+
+}
