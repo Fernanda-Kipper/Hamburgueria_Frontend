@@ -8,7 +8,7 @@ Esse projeto pessoal foi desenvolvido com o intuito de praticar e aperfeiçoar m
 
 ### Etapas mencionadas do processo:
 
-<img src="./src/images/Coolors.png" width="60%">
+<img src="./src/images/Colors.png" width="60%">
 
 <img src="./src/images/figma.png" width="60%">
 
